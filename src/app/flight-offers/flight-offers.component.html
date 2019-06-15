@@ -1,0 +1,16 @@
+<!-- <button type="button" class="btn btn-primary bouton-image monBouton" (click)="isCollapsed = !isCollapsed"
+        [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic"><i class="fa fa-plus"></i>
+</button>
+<hr>
+<div id="collapseBasic" [collapse]="isCollapsed">
+  <div class="well well-lg card card-block card-header">Some content</div>
+</div> -->
+
+<div class="card-columns">
+  <div class="card bg-light" *ngFor="let flight of flightList?.data; let i = index;">
+    <div class="card-body text-center">
+        <!-- offerItems[i].services.price.total -->
+      <p class="card-text">{{ flight.offerItems }}</p>
+    </div>
+  </div>
+</div>
